@@ -1,1 +1,8 @@
+Problem Description:
+#Find the sum of all the multiples of 3 or 5 below 1000.
+
+#new optimized version
+print(sum(filter(lambda l: l %3 == 0 or l %5 == 0, range(1,1000))))
+
+#old version
 print(sum([ l if l%3 == 0 or l%5 == 0 else 0 for l in range(1,1000)]))
