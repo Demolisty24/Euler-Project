@@ -1,3 +1,6 @@
+Problem description:
+#find the sum of the even-valued terms of fibonacci numbers below 4000000
+
 def fibonacci():
     k = [1,2]
     a = 1
@@ -5,4 +8,4 @@ def fibonacci():
         k.append(k[a]+k[a-1])
         a+=1
     return(k)
-print(sum(filter(lambda l: l %2 == 0, fibonacci())))
+print(sum(fibonacci()[1::3]))
